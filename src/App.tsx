@@ -72,7 +72,7 @@ export default function App() {
   };
 
   const handleOrder = (product: Product) => {
-    const message = encodeURIComponent(`Olá! Gostaria de encomendar o produto: ${product.name}`);
+    const message = encodeURIComponent(`Olá! Me encantei com o estilo da peça "${product.name}" e gostaria de encomendar um acessório único inspirado nela.`);
     window.open(`https://wa.me/${BRAND_INFO.whatsapp}?text=${message}`, "_blank");
   };
 
@@ -283,10 +283,10 @@ export default function App() {
         {/* Featured Products */}
         <section id="produtos" className="py-32 overflow-hidden">
           <div className="max-w-7xl mx-auto px-12">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
               <div className="text-left">
                 <h2 className="text-5xl font-serif mb-4">Alguns dos meus produtos</h2>
-                <p className="text-brand-accent uppercase tracking-[0.4em] text-[10px]">Peças singulares sob consulta</p>
+                <p className="text-brand-accent uppercase tracking-[0.4em] text-[10px]">Modelos autorais & portfólio</p>
               </div>
               {PRODUCTS.length > 4 && (
                 <div className="flex items-center gap-3">
@@ -308,6 +308,17 @@ export default function App() {
                   </button>
                 </div>
               )}
+            </div>
+
+            {/* Elegant Clarification Card */}
+            <div className="mb-16 p-8 rounded-2xl bg-brand-sidebar/40 border border-brand-border/30 max-w-4xl">
+              <span className="inline-block bg-brand-accent/10 text-brand-accent text-[9px] uppercase tracking-[0.25em] font-bold px-3 py-1 rounded-full mb-3">
+                Exclusividade Absoluta
+              </span>
+              <h3 className="text-xl font-serif text-brand-ink mb-2">Cada acessório é uma obra única</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Minhas peças são completamente singulares — <strong>não realizo cópias ou repetições de modelos anteriores</strong>. As fotos abaixo servem como uma vitrine de inspiração para demonstrar estilos, acabamentos e as possibilidades criativas para o seu projeto personalizado e inédito.
+              </p>
             </div>
 
             {PRODUCTS.length > 4 ? (
@@ -418,7 +429,10 @@ export default function App() {
         <section id="contato" className="py-24">
           <div className="max-w-3xl mx-auto px-12 text-center">
              <h2 className="text-5xl font-serif mb-6">Fale Comigo</h2>
-             <p className="text-brand-text/60 mb-10 uppercase tracking-[0.4em] text-[10px]">Encomendas especiais e dúvidas</p>
+             <p className="text-brand-accent uppercase tracking-[0.4em] text-[10px] mb-4">Encomendas especiais e dúvidas</p>
+             <p className="text-sm text-gray-500 leading-relaxed mb-10 max-w-lg mx-auto">
+               Diga o que você imagina para o seu acessório! Vamos criar juntos um modelo autoral totalmente novo e adaptado ao seu gosto, garantindo uma peça exclusiva e só sua.
+             </p>
              
              <div className="flex justify-center">
                 <a 
