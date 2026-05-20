@@ -1,12 +1,27 @@
 import { Product } from "./types";
 
+import jardimDeCristal from "./assets/images/jardim-de-cristal-pulseira.jpeg";
+import lacoDeSakura from "./assets/images/laco-de-sakura-pulseira.jpeg";
+import primaveraEncantada from "./assets/images/primavera-encantada-pulseira.jpeg";
+import coracaoDeLavanda from "./assets/images/coracao-de-lavanda-pulseira.jpeg";
+import borboletaEclipse from "./assets/images/borboleta-eclipse-colar.jpeg";
+import doceDeMorango from "./assets/images/doce-de-morango-pulseira.jpeg";
+import jardimSecreto from "./assets/images/jardim-secreto-colar.jpeg";
+import lavandaNoCampo from "./assets/images/lavanda-no-campo-pulseira.jpeg";
+import porDoSolDeOutono from "./assets/images/por-do-sol-de-outono-pulseira.jpeg";
+import ceuDePrimavera from "./assets/images/ceu-de-primavera-pulseira.jpeg";
+import fadaLilas from "./assets/images/fada-lilas-pulseira.jpeg";
+import floresDoCampo from "./assets/images/flores-do-campo-pulseira.jpeg";
+import bosqueDeOutono from "./assets/images/bosque-de-outono-pulseira.jpeg";
+import logo from "./assets/images/logo.png";
+
 export const PRODUCTS: Product[] = [
   {
     id: "1",
     name: "Jardim de Cristal",
     description: "Pulseira delicada inspirada na harmonia de um jardim secreto.",
     price: 65.00,
-    image: "/src/assets/images/jardim-de-cristal-pulseira.jpeg",
+    image: jardimDeCristal,
     category: "Pulseiras"
   },
   {
@@ -14,7 +29,7 @@ export const PRODUCTS: Product[] = [
     name: "Laço de Sakura",
     description: "Pulseira romântica com delicados detalhes inspirados nas flores de cerejeira.",
     price: 75.00,
-    image: "/src/assets/images/laco-de-sakura-pulseira.jpeg",
+    image: lacoDeSakura,
     category: "Pulseiras"
   },
   {
@@ -22,7 +37,7 @@ export const PRODUCTS: Product[] = [
     name: "Primavera Encantada",
     description: "Cores alegres e design exclusivo que trazem a brisa da primavera.",
     price: 55.00,
-    image: "/src/assets/images/primavera-encantada-pulseira.jpeg",
+    image: primaveraEncantada,
     category: "Pulseiras"
   },
   {
@@ -30,7 +45,7 @@ export const PRODUCTS: Product[] = [
     name: "Coração de Lavanda",
     description: "Pulseira suave e graciosa com delicado pingente de coração e tons lilás.",
     price: 45.00,
-    image: "/src/assets/images/coracao-de-lavanda-pulseira.jpeg",
+    image: coracaoDeLavanda,
     category: "Pulseiras"
   },
   {
@@ -38,7 +53,7 @@ export const PRODUCTS: Product[] = [
     name: "Borboleta Eclipse",
     description: "Colar sofisticado e moderno que destaca o voo elegante da borboleta.",
     price: 95.00,
-    image: "/src/assets/images/borboleta-eclipse-colar.jpeg",
+    image: borboletaEclipse,
     category: "Colares"
   },
   {
@@ -46,7 +61,7 @@ export const PRODUCTS: Product[] = [
     name: "Doce de Morango",
     description: "Delicada combinação de contas e pingentes com a doçura sutil do morango.",
     price: 60.00,
-    image: "/src/assets/images/doce-de-morango-pulseira.jpeg",
+    image: doceDeMorango,
     category: "Pulseiras"
   },
   {
@@ -54,7 +69,7 @@ export const PRODUCTS: Product[] = [
     name: "Jardim Secreto",
     description: "Colar sofisticado que revela a beleza oculta de flores e cristais.",
     price: 85.00,
-    image: "/src/assets/images/jardim-secreto-colar.jpeg",
+    image: jardimSecreto,
     category: "Colares"
   },
   {
@@ -62,7 +77,7 @@ export const PRODUCTS: Product[] = [
     name: "Lavanda no Campo",
     description: "Tons suaves de lilás e detalhes harmoniosos que transmitem paz e serenidade.",
     price: 50.00,
-    image: "/src/assets/images/lavanda-no-campo-pulseira.jpeg",
+    image: lavandaNoCampo,
     category: "Pulseiras"
   },
   {
@@ -70,7 +85,7 @@ export const PRODUCTS: Product[] = [
     name: "Pôr do Sol de Outono",
     description: "Combinação calorosa de cores terrosas e douradas que imitam um entardecer.",
     price: 65.00,
-    image: "/src/assets/images/por-do-sol-de-outono-pulseira.jpeg",
+    image: porDoSolDeOutono,
     category: "Pulseiras"
   },
   {
@@ -78,7 +93,7 @@ export const PRODUCTS: Product[] = [
     name: "Céu de Primavera",
     description: "Pulseira graciosa com tons pastéis refrescantes e o frescor do céu primaveril.",
     price: 70.00,
-    image: "/src/assets/images/ceu-de-primavera-pulseira.jpeg",
+    image: ceuDePrimavera,
     category: "Pulseiras"
   },
   {
@@ -86,7 +101,7 @@ export const PRODUCTS: Product[] = [
     name: "Fada Lilás",
     description: "Uma pulseira mágica em tons de lilás que desperta o encanto e a fantasia.",
     price: 65.00,
-    image: "/src/assets/images/fada-lilas-pulseira.jpeg",
+    image: fadaLilas,
     category: "Pulseiras"
   },
   {
@@ -94,7 +109,7 @@ export const PRODUCTS: Product[] = [
     name: "Flores do Campo",
     description: "Toda a leveza e colorido das flores silvestres reunidas em uma peça única.",
     price: 55.00,
-    image: "/src/assets/images/flores-do-campo-pulseira.jpeg",
+    image: floresDoCampo,
     category: "Pulseiras"
   },
   {
@@ -102,7 +117,7 @@ export const PRODUCTS: Product[] = [
     name: "Bosque de Outono",
     description: "Tons quentes e aconchegantes inspirados nas folhas que caem no outono.",
     price: 60.00,
-    image: "/src/assets/images/bosque-de-outono-pulseira.jpeg",
+    image: bosqueDeOutono,
     category: "Pulseiras"
   }
 ];
@@ -113,5 +128,5 @@ export const BRAND_INFO = {
   whatsapp: "5511945257842", // Brand contact number
   instagram: "@made.by.kisa",
   email: "contato@madebykisa.com",
-  logo: "/src/assets/images/logo.png",
+  logo: logo,
 };

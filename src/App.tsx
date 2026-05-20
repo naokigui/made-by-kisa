@@ -9,6 +9,9 @@ import { ShoppingBag, MessageSquare, Instagram, Mail, ChevronLeft, ChevronRight,
 import { PRODUCTS, BRAND_INFO } from "./constants";
 import { Product, ContactFormData } from "./types";
 
+import heroImg from "./assets/images/foto-pagina-principal.jpeg";
+import sobreImg from "./assets/images/sobre.jpeg";
+
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -267,7 +270,7 @@ export default function App() {
             >
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-sm border border-brand-border/20">
                 <img 
-                  src="/src/assets/images/foto-pagina-principal.jpeg" 
+                  src={heroImg} 
                   alt="Artesanato" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -390,7 +393,7 @@ export default function App() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-sm">
                 <img 
-                   src="/src/assets/images/sobre.jpeg" 
+                   src={sobreImg} 
                    alt="Made by Kisa" 
                    className="w-full h-full object-cover"
                    referrerPolicy="no-referrer"
