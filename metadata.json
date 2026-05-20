@@ -1,0 +1,8 @@
+{
+  "name": "Made by Kisa",
+  "description": "Boutique artesanal de produtos feitos à mão. Explore nossa coleção e faça encomendas personalizadas via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

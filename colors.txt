@@ -1,0 +1,5 @@
+# Cores extraídas do logo:
+# Terracotta principal: #C96655
+# Fundo Dusty Rose: #EAD1C7
+# Amarelo Sparkle: #FEF134
+# Marrom Escuro/Ink: #3A231C

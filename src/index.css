@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fredoka", serif;
+  
+  --color-brand-beige: #EAD1C7;
+  --color-brand-accent: #C96655;
+  --color-brand-sparkle: #FEF134;
+  --color-brand-border: #DBC0B5;
+  --color-brand-sidebar: #F5E6E0;
+  --color-brand-ink: #3A231C;
+  --color-brand-text: #4A332C;
+  --color-brand-whatsapp: #4DA674;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-beige text-brand-text font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-brand-ink font-medium tracking-tight;
+  }
+}
