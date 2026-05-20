@@ -285,7 +285,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-12">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
               <div className="text-left">
-                <h2 className="text-5xl font-serif mb-4">Peças que Ganharam Vida</h2>
+                <h2 className="text-5xl font-serif mb-4">Alguns dos meus produtos</h2>
                 <p className="text-brand-accent uppercase tracking-[0.4em] text-[10px]">Peças singulares sob consulta</p>
               </div>
               {PRODUCTS.length > 4 && (
