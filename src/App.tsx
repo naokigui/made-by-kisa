@@ -72,7 +72,7 @@ export default function App() {
   };
 
   const handleOrder = (product: Product) => {
-    const message = encodeURIComponent(`Olá! Me encantei com o estilo da peça "${product.name}" e gostaria de encomendar um acessório único inspirado nela.`);
+    const message = encodeURIComponent(`Oi! Gostaria de fazer uma encomenda inspirada na peça "${product.name}".`);
     window.open(`https://wa.me/${BRAND_INFO.whatsapp}?text=${message}`, "_blank");
   };
 
@@ -215,7 +215,7 @@ export default function App() {
                   <span>Instagram</span>
                 </a>
                 <a 
-                  href={`https://wa.me/${BRAND_INFO.whatsapp}`} 
+                  href={`https://wa.me/${BRAND_INFO.whatsapp}?text=${encodeURIComponent("Oi! Gostaria de fazer uma encomenda.")}`} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 text-brand-sidebar/85 hover:text-brand-whatsapp transition-colors py-3 px-4 rounded-full border border-brand-border/20 hover:border-brand-whatsapp/40 bg-white/5 text-[10px] font-bold uppercase tracking-wider"
@@ -241,9 +241,6 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className="text-brand-accent uppercase text-[10px] tracking-[0.4em] font-bold block mb-6">
-                Curadoria Artesanal
-              </span>
               <h1 className="text-7xl md:text-8xl font-serif leading-[1.1] mb-10 text-brand-ink">
                 Cada detalhe é <br />
                 <span className="text-brand-accent">pensado.</span>
@@ -458,7 +455,7 @@ export default function App() {
              
              <div className="flex justify-center">
                 <a 
-                  href={`https://wa.me/${BRAND_INFO.whatsapp}`} 
+                  href={`https://wa.me/${BRAND_INFO.whatsapp}?text=${encodeURIComponent("Oi! Gostaria de fazer uma encomenda.")}`} 
                   target="_blank"
                   className="bg-brand-whatsapp text-white px-12 py-5 rounded-full font-bold hover:bg-brand-whatsapp/90 transition-all uppercase text-[10px] tracking-[0.3em]"
                 >
