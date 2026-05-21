@@ -245,8 +245,8 @@ export default function App() {
                 Curadoria Artesanal
               </span>
               <h1 className="text-7xl md:text-8xl font-serif leading-[1.1] mb-10 text-brand-ink">
-                Beleza no <br />
-                <span className="text-brand-accent">cotidiano.</span>
+                Cada detalhe é <br />
+                <span className="text-brand-accent">pensado.</span>
               </h1>
               <p className="text-lg leading-relaxed text-brand-text/70 mb-12 max-w-sm">
                 Peças únicas que contam histórias através do fazer manual e da atenção aos detalhes.
