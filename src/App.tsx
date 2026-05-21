@@ -301,7 +301,7 @@ export default function App() {
               </div>
 
               {PRODUCTS.length > 4 && (
-                <div className="flex gap-3 shrink-0 lg:pb-4 justify-center lg:justify-end lg:pr-4">
+                <div className="hidden lg:flex gap-3 shrink-0 lg:pb-4 justify-end lg:pr-4">
                   <button 
                     onClick={handlePrev}
                     disabled={currentProductIndex === 0}
@@ -394,6 +394,27 @@ export default function App() {
                     </div>
                   </motion.div>
                 ))}
+              </div>
+            )}
+
+            {PRODUCTS.length > 4 && (
+              <div className="flex lg:hidden gap-3 justify-center mt-12">
+                <button 
+                  onClick={handlePrev}
+                  disabled={currentProductIndex === 0}
+                  className="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center hover:border-brand-accent hover:text-brand-accent disabled:opacity-30 disabled:hover:border-brand-border disabled:hover:text-brand-ink transition-all cursor-pointer"
+                  aria-label="Anterior"
+                >
+                  <ChevronLeft size={18} />
+                </button>
+                <button 
+                  onClick={handleNext}
+                  disabled={currentProductIndex >= maxIndex}
+                  className="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center hover:border-brand-accent hover:text-brand-accent disabled:opacity-30 disabled:hover:border-brand-border disabled:hover:text-brand-ink transition-all cursor-pointer"
+                  aria-label="Próximo"
+                >
+                  <ChevronRight size={18} />
+                </button>
               </div>
             )}
           </div>
