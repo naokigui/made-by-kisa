@@ -347,7 +347,7 @@ export default function App() {
                             <img 
                               src={product.image} 
                               alt={product.name} 
-                              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                              className={`w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 ${product.imagePosition || ""}`}
                               referrerPolicy="no-referrer"
                             />
                             <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -379,7 +379,7 @@ export default function App() {
                       <img 
                         src={product.image} 
                         alt={product.name} 
-                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                        className={`w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 ${product.imagePosition || ""}`}
                         referrerPolicy="no-referrer"
                       />
                       <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

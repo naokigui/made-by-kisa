@@ -5,6 +5,7 @@ export interface Product {
   price: number;
   image: string;
   category: string;
+  imagePosition?: string;
 }
 
 export interface ContactFormData {

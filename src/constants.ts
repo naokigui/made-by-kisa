@@ -2,17 +2,15 @@ import { Product } from "./types";
 
 import jardimDeCristal from "./assets/images/jardim-de-cristal-pulseira.jpeg";
 import lacoDeSakura from "./assets/images/laco-de-sakura-pulseira.jpeg";
-import primaveraEncantada from "./assets/images/primavera-encantada-pulseira.jpeg";
 import coracaoDeLavanda from "./assets/images/coracao-de-lavanda-pulseira.jpeg";
 import borboletaEclipse from "./assets/images/borboleta-eclipse-colar.jpeg";
-import doceDeMorango from "./assets/images/doce-de-morango-pulseira.jpeg";
 import jardimSecreto from "./assets/images/jardim-secreto-colar.jpeg";
 import lavandaNoCampo from "./assets/images/lavanda-no-campo-pulseira.jpeg";
 import porDoSolDeOutono from "./assets/images/por-do-sol-de-outono-pulseira.jpeg";
-import ceuDePrimavera from "./assets/images/ceu-de-primavera-pulseira.jpeg";
 import fadaLilas from "./assets/images/fada-lilas-pulseira.jpeg";
-import floresDoCampo from "./assets/images/flores-do-campo-pulseira.jpeg";
-import bosqueDeOutono from "./assets/images/bosque-de-outono-pulseira.jpeg";
+import raiosDeSol from "./assets/images/raios-de-sol-pulseira.jpeg";
+import contoDosCoelhos from "./assets/images/o-conto-do-par-de-coelhos-pulseira.jpeg";
+import tulipaDeVidro from "./assets/images/tulipa-de-vidro-pulseira.jpeg";
 import logo from "./assets/images/logo.png";
 
 export const PRODUCTS: Product[] = [
@@ -33,14 +31,6 @@ export const PRODUCTS: Product[] = [
     category: "Pulseiras"
   },
   {
-    id: "3",
-    name: "Primavera Encantada",
-    description: "Cores alegres e design exclusivo que trazem a brisa da primavera.",
-    price: 55.00,
-    image: primaveraEncantada,
-    category: "Pulseiras"
-  },
-  {
     id: "4",
     name: "Coração de Lavanda",
     description: "Colar suave e gracioso com delicado pingente de coração e tons lilás.",
@@ -55,14 +45,6 @@ export const PRODUCTS: Product[] = [
     price: 95.00,
     image: borboletaEclipse,
     category: "Colares"
-  },
-  {
-    id: "6",
-    name: "Doce de Morango",
-    description: "Delicada combinação de contas e pingentes com a doçura sutil do morango.",
-    price: 60.00,
-    image: doceDeMorango,
-    category: "Pulseiras"
   },
   {
     id: "7",
@@ -89,14 +71,6 @@ export const PRODUCTS: Product[] = [
     category: "Colares"
   },
   {
-    id: "10",
-    name: "Céu de Primavera",
-    description: "Pulseira graciosa com tons pastéis refrescantes e o frescor do céu primaveril.",
-    price: 70.00,
-    image: ceuDePrimavera,
-    category: "Pulseiras"
-  },
-  {
     id: "11",
     name: "Fada Lilás",
     description: "Uma pulseira mágica em tons de lilás que desperta o encanto e a fantasia.",
@@ -106,19 +80,28 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "12",
-    name: "Flores do Campo",
-    description: "Toda a leveza e colorido das flores silvestres reunidas em uma peça única.",
+    name: "Raios de Sol",
+    description: "Pulseira vibrante e iluminada, perfeita para dias ensolarados.",
     price: 55.00,
-    image: floresDoCampo,
+    image: raiosDeSol,
     category: "Pulseiras"
   },
   {
     id: "13",
-    name: "Bosque de Outono",
-    description: "Tons quentes e aconchegantes inspirados nas folhas que caem no outono.",
-    price: 60.00,
-    image: bosqueDeOutono,
+    name: "O Conto do Par de Coelhos",
+    description: "Pulseira encantadora com contas delicadas e pequenos pingentes de coelho.",
+    price: 70.00,
+    image: contoDosCoelhos,
     category: "Pulseiras"
+  },
+  {
+    id: "14",
+    name: "Tulipa de Vidro",
+    description: "Pulseira delicada com contas que lembram belas tulipas de vidro.",
+    price: 60.00,
+    image: tulipaDeVidro,
+    category: "Pulseiras",
+    imagePosition: "object-bottom"
   }
 ];
 
