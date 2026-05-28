@@ -43,10 +43,10 @@ export const PRODUCTS: Product[] = [
   {
     id: "4",
     name: "Coração de Lavanda",
-    description: "Pulseira suave e graciosa com delicado pingente de coração e tons lilás.",
+    description: "Colar suave e gracioso com delicado pingente de coração e tons lilás.",
     price: 45.00,
     image: coracaoDeLavanda,
-    category: "Pulseiras"
+    category: "Colares"
   },
   {
     id: "5",
@@ -86,7 +86,7 @@ export const PRODUCTS: Product[] = [
     description: "Combinação calorosa de cores terrosas e douradas que imitam um entardecer.",
     price: 65.00,
     image: porDoSolDeOutono,
-    category: "Pulseiras"
+    category: "Colares"
   },
   {
     id: "10",
